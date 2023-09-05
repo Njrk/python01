@@ -38,4 +38,4 @@ elif operation == 3:
 else:
     result = first_number / second_number if second_number > 0 else "division by zero in not allowed"
 
-print("The result of multiplication is: ", result)
+print("\nThe result of multiplication is: ", result)
