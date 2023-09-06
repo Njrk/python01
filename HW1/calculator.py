@@ -33,11 +33,18 @@ while True:
 
 if operation == 1:
     result = first_number + second_number
+    operation_name = "addition"
 elif operation == 2:
     result = first_number - second_number
+    operation_name = "subtraction"
 elif operation == 3:
     result = first_number * second_number
+    operation_name = "multiplication"
 else:
     result = first_number / second_number if second_number > 0 else "division by zero in not allowed"
+    operation_name = "division"
 
-print("\nThe result of multiplication is: ", result)
+if not isinstance(result, str):
+    result = int(result) if result.is_integer() else result
+
+print("\nThe result of", operation_name, "is: ", result)

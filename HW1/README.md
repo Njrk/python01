@@ -14,5 +14,5 @@ Please select an operation:
         
 Enter your choice (1-4): 4
 
-The result of multiplication is:  12.0
+The result of division is:  12
 ```
